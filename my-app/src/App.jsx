@@ -49,7 +49,9 @@ const queryClient = new QueryClient();
       ]
     },
     { path: '*', element: <NotFound /> } // <-- 404 for top-level routes
-  ]);
+  ], {
+    basename: '/E-commerce'
+  });
 
 function App() {
 
